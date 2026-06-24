@@ -1,128 +1,132 @@
-<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korfu 2026</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b5cad">
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Korfu 2026"><link rel="apple-touch-icon" href="icon-192.png">
-<style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,#e7f7ff,#fff);color:#102033;line-height:1.45}header{padding:24px 16px;text-align:center;background:#0b5cad;color:white}header img{width:70px;height:70px;border-radius:18px;box-shadow:0 5px 15px rgba(0,0,0,.25)}h1{margin:10px 0 4px;font-size:30px}main{max-width:950px;margin:auto;padding:14px}.menu{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 20px}.menu a{background:white;border-radius:16px;padding:14px 10px;text-align:center;text-decoration:none;color:#0b315d;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.10)}.card,.block,.mini{background:white;border-radius:18px;padding:16px;margin:14px 0;box-shadow:0 6px 20px rgba(0,0,0,.10);border:1px solid #e7eef5}.day{display:inline-block;background:#ffe9a6;color:#4d3900;font-weight:800;padding:5px 10px;border-radius:999px;font-size:14px}h2{margin:10px 0 8px;font-size:22px;color:#0b315d}h3{margin:0 0 6px;color:#0b315d}.info{background:#f3f8fc;border-radius:10px;padding:10px;margin:8px 0;color:#23384d}.buttons{display:grid;grid-template-columns:1fr;gap:9px;margin-top:10px}.btn{display:block;text-align:center;padding:13px 10px;border-radius:12px;color:white;text-decoration:none;font-weight:800;font-size:16px}.maps{background:#0f9d58}.waze{background:#1aa6df}.photos{background:#f2a900;color:#302200}.notice{background:#fff7d6;border-left:5px solid #f2a900;padding:12px 14px;border-radius:12px;margin:16px 0;color:#4d3900}.mapimg{width:100%;border-radius:18px;border:1px solid #dce8f2;box-shadow:0 6px 20px rgba(0,0,0,.12)}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid #edf2f7;padding:8px;text-align:left}li{margin:8px 0}@media(min-width:760px){.menu{grid-template-columns:repeat(5,1fr)}.buttons{grid-template-columns:repeat(3,1fr)}}
-</style></head><body><header><img src="icon-192.png"><h1>🇬🇷 Korfu 2026</h1><p>Telefonbarát PWA útikalauz – Apartments Corfu Sun Pool Side, Benitses</p></header><main>
-<div class="notice"><b>Frissítve:</b> 6. nap: Agios Gordios strand + 18:00-tól Kombitsi görög est.</div>
-<nav class="menu"><a href="#szallas">🏨 Szállás</a><a href="#programok">🗺️ Napi programok</a><a href="#terkep">🗺️ Térkép</a><a href="#strandok">🏖️ Strandok</a><a href="#ettermek">🍽️ Éttermek</a><a href="#bevasarlas">🛒 Bevásárlás</a><a href="#navigacio">🚗 Navigáció</a><a href="#segely">📞 Segélyhívók</a><a href="#szotar">🇬🇷 Görög szótár</a><a href="#idojaras">☀️ Időjárás</a><a href="#koltsegek">💶 Költségek</a></nav>
-<section id="szallas" class="block"><h2>🏨 Szállás</h2><h3>Apartments Corfu Sun Pool Side – Benitses</h3><p>Ez legyen az alap navigációs pontotok.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🚗 Waze</a>
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Korfu 2026</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b5cad"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Korfu 2026"><link rel="apple-touch-icon" href="icon-192.png"><style>
+:root{--bg:#e7f7ff;--text:#102033;--card:#fff}@media(prefers-color-scheme:dark){:root{--bg:#071827;--text:#eaf6ff;--card:#10283b}}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text);line-height:1.45}@media(prefers-color-scheme:dark){body{background:linear-gradient(180deg,#071827,#0b1722)}}header{padding:24px 16px;text-align:center;background:#0b5cad;color:white}header img{width:70px;height:70px;border-radius:18px}h1{margin:10px 0 4px;font-size:30px}main{max-width:950px;margin:auto;padding:14px}.menu{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 20px}.menu a{background:var(--card);border-radius:16px;padding:14px 10px;text-align:center;text-decoration:none;color:var(--text);font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.10)}.card,.block,.mini{background:var(--card);border-radius:18px;padding:16px;margin:14px 0;box-shadow:0 6px 20px rgba(0,0,0,.10);border:1px solid rgba(120,150,180,.25)}.day{display:inline-block;background:#ffe9a6;color:#4d3900;font-weight:800;padding:5px 10px;border-radius:999px;font-size:14px}.info{background:rgba(11,92,173,.10);border-radius:10px;padding:10px;margin:8px 0}.buttons{display:grid;grid-template-columns:1fr;gap:9px;margin-top:10px}.btn{display:block;text-align:center;padding:13px 10px;border-radius:12px;color:white;text-decoration:none;font-weight:800;font-size:16px}.google{background:#0f9d58}.waze{background:#1aa6df}.apple{background:#333}.photos{background:#f2a900;color:#302200}.notice{background:#fff7d6;border-left:5px solid #f2a900;padding:12px 14px;border-radius:12px;margin:16px 0;color:#4d3900}.mapimg{width:100%;border-radius:18px}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid rgba(120,150,180,.25);padding:8px;text-align:left}@media(min-width:760px){.menu{grid-template-columns:repeat(5,1fr)}.buttons{grid-template-columns:repeat(4,1fr)}}</style></head><body><header><img src="icon-192.png"><h1>🇬🇷 Korfu 2026</h1><p>PWA útikalauz – Apartments Corfu Sun Pool Side</p></header><main><div class="notice"><b>Végleges verzió:</b> Waze app-linkekkel, Apple Maps-szel és frissített 6. nappal.</div><nav class="menu"><a href="#szallas">🏨 Szállás</a><a href="#programok">🗺️ Napi programok</a><a href="#terkep">🗺️ Térkép</a><a href="#strandok">🏖️ Strandok</a><a href="#ettermek">🍽️ Éttermek</a><a href="#bevasarlas">🛒 Bevásárlás</a><a href="#navigacio">🚗 Navigáció</a><a href="#segely">📞 Segélyhívók</a><a href="#szotar">🇬🇷 Görög szótár</a><a href="#idojaras">☀️ Időjárás</a><a href="#koltsegek">💶 Költségek</a></nav><section id="szallas" class="block"><h2>🏨 Szállás</h2><h3>Apartments Corfu Sun Pool Side</h3><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses%20photos">📷 Fotók</a>
-</div></section>
-<section id="programok" class="block"><h2>🗺️ Napi programok</h2><section class="card"><div class="day">1. nap</div><h2>Szállás + Benitses</h2><p>Apartments Corfu Sun Pool Side, első fürdés és esti séta.</p><div class="info"><b>Étterem / étkezés:</b> Paxinos vagy Klimataria.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🚗 Waze</a>
+</div></section><section id="programok" class="block"><h2>🗺️ Napi programok</h2><section class="card"><div class="day">1. nap</div><h2>Szállás + Benitses</h2><p>Apartments Corfu Sun Pool Side, első fürdés és esti séta.</p><div class="info"><b>Étterem / étkezés:</b> Paxinos vagy Klimataria.</div><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses%20photos">📷 Fotók</a>
 </div></section><section class="card"><div class="day">2. nap</div><h2>Korfu óváros + Kanoni</h2><p>Liston, Régi Erőd, sikátorok, Kanoni repülőles és Vlacherna kolostor.</p><div class="info"><b>Étterem / étkezés:</b> Rex Restaurant vagy Pane e Souvlaki.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Corfu%20Old%20Town">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Corfu%20Old%20Town">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Corfu%20Old%20Town">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Corfu%20Old%20Town&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Corfu%20Old%20Town">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Corfu%20Old%20Town%20photos">📷 Fotók</a>
 </div></section><section class="card"><div class="day">3. nap</div><h2>Paleokastritsa</h2><p>Türkiz öblök, hajókirándulás, barlangok, snorkeling és Bella Vista.</p><div class="info"><b>Étterem / étkezés:</b> Nereids Restaurant vagy Limani.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Paleokastritsa%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Paleokastritsa%20Corfu">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Paleokastritsa%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Paleokastritsa%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Paleokastritsa%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Paleokastritsa%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="card"><div class="day">4. nap</div><h2>Porto Timoni / Afionas</h2><p>Kétöblös strand, gyalogtúra Afionasból. Sportcipő és víz ajánlott.</p><div class="info"><b>Étterem / étkezés:</b> Anemos Taverna Afionasban.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Porto%20Timoni%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Porto%20Timoni%20Corfu">🚗 Waze</a>
+</div></section><section class="card"><div class="day">4. nap</div><h2>Porto Timoni / Afionas</h2><p>Kétöblös strand, gyalogtúra Afionasból.</p><div class="info"><b>Étterem / étkezés:</b> Anemos Taverna Afionasban.</div><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Porto%20Timoni%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Porto%20Timoni%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Porto%20Timoni%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Porto%20Timoni%20Corfu%20photos">📷 Fotók</a>
 </div></section><section class="card"><div class="day">5. nap</div><h2>Glyfada strand</h2><p>Homokos strand, lassan mélyülő víz, napágyak és naplemente.</p><div class="info"><b>Étterem / étkezés:</b> Pazuzu Beach Bar vagy parti taverna.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Glyfada%20Beach%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Glyfada%20Beach%20Corfu">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Glyfada%20Beach%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Glyfada%20Beach%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Glyfada%20Beach%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Glyfada%20Beach%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="card"><div class="day">6. nap</div><h2>Agios Gordios + Kombitsi görög est</h2><p>Délelőtt strand Agios Gordiosban, este 18:00-tól Kombitsi Panigiri.</p><div class="info"><b>Étterem / étkezés:</b> Sebastian’s Taverna / Thalassa, este panigiri grillételek.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Agios%20Gordios%20Beach%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Agios%20Gordios%20Beach%20Corfu">🚗 Waze</a>
+</div></section><section class="card"><div class="day">6. nap</div><h2>Agios Gordios + Kombitsi görög est</h2><p>Délelőtt Agios Gordios strand, este 18:00-tól Kombitsi Panigiri.</p><div class="info"><b>Étterem / étkezés:</b> Sebastian’s Taverna / Thalassa, este panigiri grillételek.</div><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Agios%20Gordios%20Beach%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Agios%20Gordios%20Beach%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Agios%20Gordios%20Beach%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Agios%20Gordios%20Beach%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="card"><div class="day">6. nap este</div><h2>Kombitsi Panigiri</h2><p>Hagyományos görög falusi ünnep élő zenével, tánccal, souvlakival és helyi borral.</p><div class="info"><b>Étterem / étkezés:</b> Helyben souvlaki, grillételek, helyi bor.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Kombitsi%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Kombitsi%20Corfu">🚗 Waze</a>
+</div></section><section class="card"><div class="day">6. nap este</div><h2>Kombitsi Panigiri</h2><p>Görög falusi ünnep élő zenével, tánccal, souvlakival és borral.</p><div class="info"><b>Étterem / étkezés:</b> Helyben souvlaki, grillételek, helyi bor.</div><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Kombitsi%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Kombitsi%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Kombitsi%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Kombitsi%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="card"><div class="day">7. nap</div><h2>Sidari + Canal d’Amour</h2><p>Sziklák, homokos partszakasz, fürdés és esti séta Sidariban.</p><div class="info"><b>Étterem / étkezés:</b> The Three Little Pigs vagy Salt and Pepper.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Canal%20d%27Amour%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Canal%20d%27Amour%20Corfu">🚗 Waze</a>
+</div></section><section class="card"><div class="day">7. nap</div><h2>Sidari + Canal d’Amour</h2><p>Sziklák, homokos partszakasz, fürdés és esti séta.</p><div class="info"><b>Étterem / étkezés:</b> The Three Little Pigs vagy Salt and Pepper.</div><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Canal%20d%27Amour%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Canal%20d%27Amour%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Canal%20d%27Amour%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Canal%20d%27Amour%20Corfu%20photos">📷 Fotók</a>
 </div></section><section class="card"><div class="day">8. nap</div><h2>Benitses + hazautazás</h2><p>Utolsó fürdés, csomagolás, tankolás, autóleadás, repülőtér.</p><div class="info"><b>Étterem / étkezés:</b> Utolsó ebéd: Klimataria vagy Paxinos.</div><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Corfu%20International%20Airport">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Corfu%20International%20Airport">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Corfu%20International%20Airport">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Corfu%20International%20Airport&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Corfu%20International%20Airport">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Corfu%20International%20Airport%20photos">📷 Fotók</a>
-</div></section></section>
-<section id="terkep" class="block"><h2>🗺️ Térkép</h2><p>A térkép offline is látható, ha a PWA telepítve van.</p><a href="terkep-korfu.png"><img class="mapimg" src="terkep-korfu.png" alt="Korfu útiterv térkép"></a></section>
-<section id="strandok" class="block"><h2>🏖️ Strandok</h2><section class="mini"><h3>Agios Gordios</h3><p>Homokos, naplementés strand. Jó választás családdal.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Agios%20Gordios%20Beach%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Agios%20Gordios%20Beach%20Corfu">🚗 Waze</a>
+</div></section></section><section id="terkep" class="block"><h2>🗺️ Térkép</h2><p>A térkép offline is látható.</p><a href="terkep-korfu.png"><img class="mapimg" src="terkep-korfu.png"></a></section><section id="strandok" class="block"><h2>🏖️ Strandok</h2><section class="mini"><h3>Agios Gordios</h3><p>Homokos, naplementés strand.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Agios%20Gordios%20Beach%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Agios%20Gordios%20Beach%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Agios%20Gordios%20Beach%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Agios%20Gordios%20Beach%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Glyfada</h3><p>Hosszú homokos strand, napágyakkal és vízisporttal.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Glyfada%20Beach%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Glyfada%20Beach%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Glyfada</h3><p>Hosszú homokos strand.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Glyfada%20Beach%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Glyfada%20Beach%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Glyfada%20Beach%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Glyfada%20Beach%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Paleokastritsa</h3><p>Türkiz öblök, snorkeling és hajókirándulás.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Paleokastritsa%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Paleokastritsa%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Paleokastritsa</h3><p>Türkiz öblök, snorkeling.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Paleokastritsa%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Paleokastritsa%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Paleokastritsa%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Paleokastritsa%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Porto Timoni</h3><p>Kétöblös strand, túrával közelíthető meg.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Porto%20Timoni%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Porto%20Timoni%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Porto Timoni</h3><p>Kétöblös strand, túrával.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Porto%20Timoni%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Porto%20Timoni%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Porto%20Timoni%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Porto%20Timoni%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Benitses</h3><p>Közeli, aprókavicsos helyi strand gyors fürdéshez.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Benitses%20Beach%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Benitses%20Beach%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Benitses</h3><p>Közeli, aprókavicsos helyi strand.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Benitses%20Beach%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Benitses%20Beach%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Benitses%20Beach%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Benitses%20Beach%20Corfu%20photos">📷 Fotók</a>
-</div></section></section>
-<section id="ettermek" class="block"><h2>🍽️ Éttermek</h2><section class="mini"><h3>Paxinos</h3><p>Benitses – klasszikus görög taverna.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Paxinos%20Benitses%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Paxinos%20Benitses%20Corfu">🚗 Waze</a>
+</div></section></section><section id="ettermek" class="block"><h2>🍽️ Éttermek</h2><section class="mini"><h3>Paxinos</h3><p>Benitses – görög taverna.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Paxinos%20Benitses%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Paxinos%20Benitses%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Paxinos%20Benitses%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Paxinos%20Benitses%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Klimataria</h3><p>Benitses – autentikus, családias hangulat.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Klimataria%20Benitses%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Klimataria%20Benitses%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Klimataria</h3><p>Benitses – családias hangulat.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Klimataria%20Benitses%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Klimataria%20Benitses%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Klimataria%20Benitses%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Klimataria%20Benitses%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Sebastian’s Taverna</h3><p>Agios Gordios – jó ebéd a 6. napon.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Sebastian%27s%20Taverna%20Agios%20Gordios">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Sebastian%27s%20Taverna%20Agios%20Gordios">🚗 Waze</a>
+</div></section><section class="mini"><h3>Sebastian’s Taverna</h3><p>Agios Gordios – jó ebéd.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Sebastian%27s%20Taverna%20Agios%20Gordios">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Sebastian%27s%20Taverna%20Agios%20Gordios&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Sebastian%27s%20Taverna%20Agios%20Gordios">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Sebastian%27s%20Taverna%20Agios%20Gordios%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Pane e Souvlaki</h3><p>Korfu óváros – gyors, jó ár-érték.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Pane%20e%20Souvlaki%20Corfu%20Town">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Pane%20e%20Souvlaki%20Corfu%20Town">🚗 Waze</a>
+</div></section><section class="mini"><h3>Pane e Souvlaki</h3><p>Korfu óváros – gyors, jó.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Pane%20e%20Souvlaki%20Corfu%20Town">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Pane%20e%20Souvlaki%20Corfu%20Town&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Pane%20e%20Souvlaki%20Corfu%20Town">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Pane%20e%20Souvlaki%20Corfu%20Town%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Anemos Taverna</h3><p>Afionas / Porto Timoni környéke.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Anemos%20Taverna%20Afionas%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Anemos%20Taverna%20Afionas%20Corfu">🚗 Waze</a>
-<a class="btn photos" href="https://www.google.com/maps/search/Anemos%20Taverna%20Afionas%20Corfu%20photos">📷 Fotók</a>
-</div></section></section>
-<section id="bevasarlas" class="block"><h2>🛒 Bevásárlás</h2><section class="mini"><h3>Lidl Corfu</h3><p>Nagybevásárlás, víz, snack, reggeli.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Lidl%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Lidl%20Corfu">🚗 Waze</a>
+</div></section></section><section id="bevasarlas" class="block"><h2>🛒 Bevásárlás</h2><section class="mini"><h3>Lidl Corfu</h3><p>Nagybevásárlás, víz, snack.</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Lidl%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Lidl%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Lidl%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Lidl%20Corfu%20photos">📷 Fotók</a>
 </div></section><section class="mini"><h3>AB Vassilopoulos</h3><p>Szupermarket, jó választék.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=AB%20Vassilopoulos%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=AB%20Vassilopoulos%20Corfu">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=AB%20Vassilopoulos%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=AB%20Vassilopoulos%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=AB%20Vassilopoulos%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/AB%20Vassilopoulos%20Corfu%20photos">📷 Fotók</a>
 </div></section><section class="mini"><h3>Benitses market</h3><p>Kisebb helyi bevásárlás.</p><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Benitses%20supermarket%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Benitses%20supermarket%20Corfu">🚗 Waze</a>
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Benitses%20supermarket%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Benitses%20supermarket%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Benitses%20supermarket%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Benitses%20supermarket%20Corfu%20photos">📷 Fotók</a>
-</div></section></section>
-<section id="navigacio" class="block"><h2>🚗 Navigáció</h2><section class="mini"><h3>Szállás</h3><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🚗 Waze</a>
+</div></section></section><section id="navigacio" class="block"><h2>🚗 Navigáció</h2><section class="mini"><h3>Szállás</h3><p>Apartments Corfu Sun Pool Side</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Apartments%20Corfu%20Sun%20Pool%20Side%20Benitses%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Korfu repülőtér</h3><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Corfu%20International%20Airport">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Corfu%20International%20Airport">🚗 Waze</a>
+</div></section><section class="mini"><h3>Repülőtér</h3><p>Corfu International Airport</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Corfu%20International%20Airport">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Corfu%20International%20Airport&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Corfu%20International%20Airport">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Corfu%20International%20Airport%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Kanoni</h3><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Kanoni%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Kanoni%20Corfu">🚗 Waze</a>
+</div></section><section class="mini"><h3>Kanoni</h3><p>Repülőles</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Kanoni%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Kanoni%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Kanoni%20Corfu">🧭 Apple Maps</a>
 <a class="btn photos" href="https://www.google.com/maps/search/Kanoni%20Corfu%20photos">📷 Fotók</a>
-</div></section><section class="mini"><h3>Achilleion</h3><div class="buttons">
-<a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Achilleion%20Corfu">📍 Google Maps</a>
-<a class="btn waze" href="https://waze.com/search?query=Achilleion%20Corfu">🚗 Waze</a>
-<a class="btn photos" href="https://www.google.com/maps/search/Achilleion%20Corfu%20photos">📷 Fotók</a>
-</div></section></section>
-<section id="segely" class="block"><h2>📞 Segélyhívók</h2><ul><li><b>112</b> – Európai segélyhívó</li><li><b>100</b> – Rendőrség</li><li><b>166</b> – Mentő</li><li><b>199</b> – Tűzoltóság</li><li><b>+30 26610 86950</b> – Tourist Police Corfu</li></ul></section>
-<section id="szotar" class="block"><h2>🇬🇷 Görög szótár</h2><table><tr><th>Görög</th><th>Kiejtés</th><th>Magyar</th></tr><tr><td>Καλημέρα</td><td><b>Kaliméra</b></td><td>Jó reggelt</td></tr><tr><td>Καλησπέρα</td><td><b>Kalispéra</b></td><td>Jó estét</td></tr><tr><td>Γεια σου</td><td><b>Jászu</b></td><td>Szia</td></tr><tr><td>Γεια σας</td><td><b>Jászász</b></td><td>Jó napot / Üdvözlöm</td></tr><tr><td>Ευχαριστώ</td><td><b>Efharisztó</b></td><td>Köszönöm</td></tr><tr><td>Παρακαλώ</td><td><b>Parakaló</b></td><td>Kérem / szívesen</td></tr><tr><td>Ναι</td><td><b>Ne</b></td><td>Igen</td></tr><tr><td>Όχι</td><td><b>Óhi</b></td><td>Nem</td></tr><tr><td>Πόσο κάνει;</td><td><b>Pószo káni?</b></td><td>Mennyibe kerül?</td></tr><tr><td>Λογαριασμό παρακαλώ</td><td><b>Logariaszmó parakaló</b></td><td>A számlát kérem</td></tr><tr><td>Νερό</td><td><b>Neró</b></td><td>Víz</td></tr><tr><td>Παραλία</td><td><b>Paralía</b></td><td>Strand</td></tr><tr><td>Φαρμακείο</td><td><b>Farmakío</b></td><td>Gyógyszertár</td></tr><tr><td>Βοήθεια!</td><td><b>Voíthia!</b></td><td>Segítség!</td></tr></table></section>
-<section id="idojaras" class="block"><h2>☀️ Időjárás</h2><p>Június végén általában 28–32 °C, este kb. 20–24 °C. A tenger jellemzően 23–24 °C körül van.</p><div class="buttons"><a class="btn photos" href="https://www.meteoblue.com/en/weather/week/corfu_greece_2463679">☀️ Meteoblue Korfu</a><a class="btn waze" href="https://www.windy.com/?39.624,19.922,9">🌬️ Windy Korfu</a></div></section>
-<section id="koltsegek" class="block"><h2>💶 Költségek</h2><ul><li>Napágy + napernyő: kb. 10–25 € / nap</li><li>Vacsora 4 főre: kb. 50–90 €</li><li>Gyros / pita: kb. 4–7 €</li><li>Parkolás népszerű helyeken: kb. 2–8 €</li><li>Üzemanyag: kb. 50–80 € / hét</li><li>Készpénz: 200–300 € tartalék javasolt</li></ul></section>
-</main><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));}</script></body></html>
+</div></section><section class="mini"><h3>Kombitsi</h3><p>Görög est</p><div class="buttons">
+<a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Kombitsi%20Corfu">📍 Google Maps</a>
+<a class="btn waze" href="waze://?q=Kombitsi%20Corfu&navigate=yes">🚗 Waze app</a>
+<a class="btn apple" href="http://maps.apple.com/?q=Kombitsi%20Corfu">🧭 Apple Maps</a>
+<a class="btn photos" href="https://www.google.com/maps/search/Kombitsi%20Corfu%20photos">📷 Fotók</a>
+</div></section></section><section id="segely" class="block"><h2>📞 Segélyhívók</h2><ul><li><b>112</b> – Európai segélyhívó</li><li><b>100</b> – Rendőrség</li><li><b>166</b> – Mentő</li><li><b>199</b> – Tűzoltóság</li></ul></section><section id="szotar" class="block"><h2>🇬🇷 Görög szótár</h2><table><tr><th>Görög</th><th>Kiejtés</th><th>Magyar</th></tr><tr><td>Καλημέρα</td><td><b>Kaliméra</b></td><td>Jó reggelt</td></tr><tr><td>Καλησπέρα</td><td><b>Kalispéra</b></td><td>Jó estét</td></tr><tr><td>Γεια σου</td><td><b>Jászu</b></td><td>Szia</td></tr><tr><td>Ευχαριστώ</td><td><b>Efharisztó</b></td><td>Köszönöm</td></tr><tr><td>Παρακαλώ</td><td><b>Parakaló</b></td><td>Kérem / szívesen</td></tr><tr><td>Ναι</td><td><b>Ne</b></td><td>Igen</td></tr><tr><td>Όχι</td><td><b>Óhi</b></td><td>Nem</td></tr><tr><td>Πόσο κάνει;</td><td><b>Pószo káni?</b></td><td>Mennyibe kerül?</td></tr><tr><td>Λογαριασμό παρακαλώ</td><td><b>Logariaszmó parakaló</b></td><td>A számlát kérem</td></tr><tr><td>Νερό</td><td><b>Neró</b></td><td>Víz</td></tr><tr><td>Παραλία</td><td><b>Paralía</b></td><td>Strand</td></tr></table></section><section id="idojaras" class="block"><h2>☀️ Időjárás</h2><p>Június végén általában 28–32 °C, a tenger kb. 23–24 °C.</p><div class="buttons"><a class="btn photos" href="https://www.meteoblue.com/en/weather/week/corfu_greece_2463679">☀️ Meteoblue</a><a class="btn waze" href="https://www.windy.com/?39.624,19.922,9">🌬️ Windy</a></div></section><section id="koltsegek" class="block"><h2>💶 Költségek</h2><ul><li>Napágy + napernyő: kb. 10–25 € / nap</li><li>Vacsora 4 főre: kb. 50–90 €</li><li>Gyros / pita: kb. 4–7 €</li><li>Parkolás: kb. 2–8 €</li><li>Üzemanyag: kb. 50–80 € / hét</li></ul></section></main><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));}</script></body></html>
